@@ -1,0 +1,18 @@
+html {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+
+	width: 100%;
+	height: 100%;
+}
+
+
+#mainband, footer {
+	max-width: 80ch;
+	height: 10ch;
+}

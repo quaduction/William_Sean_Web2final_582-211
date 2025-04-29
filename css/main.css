@@ -1,0 +1,9 @@
+@import url(./layout.css);
+
+*, *:before, *::after {
+	box-sizing: border-box;
+}
+
+body, head {
+	margin: 0;
+}
