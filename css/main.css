@@ -1,9 +1,11 @@
+@import url(./glass.css);
 @import url(./layout.css);
-
-*, *:before, *::after {
-	box-sizing: border-box;
-}
+@import url(./style.css);
 
 body, head {
 	margin: 0;
+}
+
+#logo {
+	mix-blend-mode: multiply;
 }
