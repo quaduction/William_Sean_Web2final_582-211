@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Lemonada:wght@300..700&display=swap');
+
+body {
+	color: white;
+
+	background: url(../assets/images/bg.png) center / cover;
+}
+
+p,a,h1,h2,h3,h4 {
+	text-shadow: 0 0.2em 0.2em var(--b25);
+	filter: drop-shadow();
+}
+
+h1,h2,h3,h4 {
+	font-family: Lemon;
+}
+
+p,a {
+	font-family: Lemonada;
+}
+
+
+nav a {
+	text-decoration: none;
+	font-family: Lemon;
+	font-size: 1.1rem;
+
+	color: black;
+	transition: 1s;
+}
+
+
+nav a:hover {
+	color: var(--jblue);
+	background-color: var(--w35p);
+}
+
+footer {
+	color: black;
+}
