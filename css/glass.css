@@ -1,0 +1,24 @@
+:root {
+	--w25: rgba(255, 255, 255, 0.25);
+	--w35: rgba(255, 255, 255, 0.35);
+	--w35p: rgba(255, 255, 255, 0.45);
+	--g40: rgba(181, 181, 181, 0.40);
+
+	--b25: rgba(0, 0, 0, 0.25);
+
+	--jblue: rgb(35, 119, 189);
+}
+
+.glass {
+	background: var(--w35);
+}
+
+.largeglass, .darkglass {
+	background: var(--g40);
+	backdrop-filter: blur(32px);
+}
+
+.pane {
+	border-radius: 2.5rem;
+	border: 0.5rem solid var(--w25);
+}
