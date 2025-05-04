@@ -214,6 +214,22 @@ img[src$="bar.png"] {
 
 /* Si l'écran est moins de 700px de large, utiliser l'arrangement mobile */
 @media screen and (width < 700px) {
+	#mainband, nav {
+		width: 90%;
+	}
+
+	nav {
+		flex-flow: wrap;
+	}
+
+	nav a {
+		padding: 0.5em;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
 	/* Faire disparaitre le aside */
 	aside {
 		display: none;

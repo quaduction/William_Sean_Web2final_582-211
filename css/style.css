@@ -104,3 +104,18 @@ footer {
 .card:hover {
 	border-color: var(--b25);
 }
+
+/*---------------------------------------------------------------- 
+# ADAPTATION PAR MEDIA QUERIES
+----------------------------------------------------------------*/ 
+
+/* Si l'écran est moins de 700px de large, utiliser l'arrangement mobile */
+@media screen and (width < 700px) {
+	nav a {
+		font-size: 1em;
+	}
+
+	.card h3 {
+		font-size: 0.75em;
+	}
+ }
