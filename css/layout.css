@@ -1,3 +1,7 @@
+/*--------------------------------------------------------- 
+# SECTION : Styles généraux
+---------------------------------------------------------*/ 
+
 *, *:before, *::after {
 	box-sizing: border-box;
 }
@@ -6,6 +10,7 @@ html {
 	height: 100%;
 }
 
+/* Layout, taille et marge intérieure du body */
 body {
 	display: flex;
 	flex-flow: column nowrap;
@@ -17,6 +22,7 @@ body {
 	padding: 2rem;
 }
 
+/* Layout du conteneur principal et du header */
 #mainband {
 	padding: 0;
 }
@@ -35,24 +41,13 @@ header {
 	margin-top: 2rem;
 }
 
+/* Taille et marge intérieur du logo */
 #logo {
 	width: 80%;
 	padding: 1rem 0;
 }
 
-nav {
-	width: 100%;
-
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
-}
-
-nav a {
-	display: block;
-	padding: 1.2em;
-}
-
+/* Layout, taille et marge intérieure et extérieure du main */
 main {
 	display: flex;
 	flex-flow: row nowrap;
@@ -63,62 +58,61 @@ main {
 	padding: 1em;
 }
 
+/* Layout flex des sections */
 section {
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
 }
 
+/* Marge extérieure gauche identique pour les headers 2 dans le contenu et paragraphes dans les sections du contenu */
 #content > h2, section p {
 	margin-left: 2em;
 }
 
-img[src$="bar.png"] {
-    width: 80%;
-}
-
-.gallery {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-evenly;
-	align-items: center;
-
-	gap: 1rem;
-}
-
-.gallery img {
-	max-width: 100px;
-}
-
+/* Layout, taille et marge intérieure du aside */
 aside {
 	display: flex;
 	flex-flow: column;
 	align-items: center;
 	gap: 1em;
 
+	padding: 1rem;
 	height: fit-content;
 
 	flex: 0;
 }
 
+/* Taille des images dans le aside */
 aside img {
 	width: 100%;
 }
 
+/* Taille et marge intérieure des boutons */
 button {
 	width: 11em;
 	padding: 0.5em;
 }
 
-.row {
+/*---------------------------------------------------------- 
+# SECTION : En-tête et bas de page
+----------------------------------------------------------*/
+
+/* Layout et taille de la barre de navigation */
+nav {
+	width: 100%;
+
 	display: flex;
 	flex-flow: row nowrap;
+	justify-content: space-evenly;
 }
 
-.row p:first-of-type {
-	width: 5em;
+nav a {
+	display: block;
+	padding: 1.2em;
 }
 
+/* Layout, taille et marge intérieure et extérieure du footer */
 footer {
 	display: flex;
 	flex-flow: row nowrap;
@@ -131,21 +125,64 @@ footer {
 	margin-top: 4rem;
 }
 
+/* Layout et taille des éléments conteneur dans le footer */
 footer .pane {
 	flex: 1;
 	height: 100%;
+
+	display: flex;
+	flex-flow: column;
+	align-items: center;
 }
 
-.pane {
-	padding: 1em;
+/*---------------------------------------------------------- 
+# SECTION : Layout Spécifique
+----------------------------------------------------------*/
+
+/* Taille de la barre de division */
+img[src$="bar.png"] {
+    width: 80%;
 }
 
+/* Layout de la galerie d'image */
+.gallery {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-items: center;
+
+	gap: 1rem;
+}
+
+/* Taille des images dans la galerie d'image */
+.gallery img {
+	max-width: 100px;
+}
+
+/* Layout pour les éléments conteneur en rangée */
+.row {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+/* Taille appliquée pour le premier élément dans un élément conteneur en rangée, utilisée dans le footer et Nous Joindre pour aligner le texte correctement */
+.row p:first-of-type {
+	width: 3rem;
+}
+
+/* Taille appliquée pour le dernier élément dans un élément conteneur en rangée, utilisée dans le footer et Nous Joindre pour aligner le texte correctement */
+.row p:last-of-type {
+	width: 14rem;
+}
+
+/* Layout grid du conteneur de carte, utilisé dans Services */
 .cardcontainer {
 	display: grid;
 	grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
 	gap: 1rem;
 }
 
+/* Layout, aspect-ratio et marge intérieure des cartes */
 .card {
 	position: relative;
 
@@ -158,6 +195,7 @@ footer .pane {
 	justify-content: center;
 }
 
+/* Layout du header 3 des cartes */
 .card h3 {
 	position: absolute;
 	top: 0;
@@ -165,6 +203,24 @@ footer .pane {
 	text-align: center;
 }
 
+/* Taille des images des cartes */
 .card img {
 	width: 75%;
 }
+
+/*---------------------------------------------------------------- 
+# ADAPTATION PAR MEDIA QUERIES
+----------------------------------------------------------------*/ 
+
+/* Si l'écran est moins de 700px de large, utiliser l'arrangement mobile */
+@media screen and (width < 700px) {
+	/* Faire disparaitre le aside */
+	aside {
+		display: none;
+	}
+
+	/* Alignement vertical pour meilleure lisibilité */
+	footer {
+		flex-flow: column nowrap;
+	}
+ }
