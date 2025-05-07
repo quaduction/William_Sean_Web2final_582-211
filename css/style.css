@@ -51,6 +51,21 @@ button {
 	cursor: pointer;
 }
 
+aside span {
+	animation: 4s blink linear infinite;
+	display: inline-block;
+}
+
+@keyframes blink {
+	0%, 100% { opacity: 0.8; }
+
+    25% { opacity: 0.8; }
+
+	50% { opacity: 0.4; }
+
+	75% { opacity: 0.8; }
+}
+
 /* Le fond du bouton devient plus blanc si hover */
 button:hover {
 	color: var(--jblue);
