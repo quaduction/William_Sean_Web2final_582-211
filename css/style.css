@@ -51,18 +51,18 @@ button {
 }
 
 aside span {
-	animation: 4s blink linear infinite;
+	animation: 2.5s blink linear infinite;
 	display: inline-block;
 }
 
 @keyframes blink {
 	0%, 100% { opacity: 0.8; }
 
-    25% { opacity: 0.8; }
+    25% { opacity: 0.6; }
 
-	50% { opacity: 0.4; }
+	50% { opacity: 0.25; }
 
-	75% { opacity: 0.8; }
+	75% { opacity: 0.6; }
 }
 
 /* Le fond du bouton devient plus blanc si hover */
@@ -93,7 +93,8 @@ nav a {
 	font-family: Lemon;
 	font-size: 1.1rem;
 
-	color: var(--black);
+	color: var(--white);
+	text-shadow: 0 0.2em 0.6em var(--black);
 	transition: 1s; /* Transition pour le hover */
 }
 

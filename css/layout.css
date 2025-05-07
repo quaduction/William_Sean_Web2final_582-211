@@ -28,7 +28,7 @@ body {
 }
 
 #mainband, footer {
-	max-width: 100ch;
+	max-width: 120ch;
 }
 
 #mainband, header {
@@ -38,6 +38,7 @@ body {
 }
 
 header {
+	width: 100%;
 	margin-top: 2rem;
 }
 
@@ -137,7 +138,7 @@ footer {
 
 /* Layout et taille des éléments conteneur dans le footer */
 footer .pane {
-	flex: 1;
+	flex: 2;
 	height: 100%;
 
 	display: flex;
