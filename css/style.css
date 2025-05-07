@@ -10,7 +10,7 @@ body {
 	color: var(--black);
 
 	background: url(../assets/images/bg.png) center / cover;
-	background-size: 400vh 400vh;
+	background-size: 450vh 450vh;
 }
 
 /* Ajouter ombrage au texte */
@@ -60,6 +60,13 @@ button:hover {
 /* Simuler l'effet d'appuyer sur le bouton si appuyé */
 button:active {
 	top: 3px;
+}
+
+/* Hover pour les liens seuls */
+a:hover {
+	text-decoration: none;
+	opacity: 0.5;
+	transition: 0.5s;
 }
 
 /*---------------------------------------------------------- 
