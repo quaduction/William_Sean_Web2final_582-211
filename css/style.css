@@ -9,8 +9,7 @@
 body {
 	color: var(--black);
 
-	background: url(../assets/images/bg.png) center / cover;
-	background-size: 450vh 450vh;
+	background: url(../assets/images/bg2.png) center / contain;
 }
 
 /* Ajouter ombrage au texte */
