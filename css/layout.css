@@ -224,8 +224,8 @@ img[src$="bar.png"] {
 # ADAPTATION PAR MEDIA QUERIES
 ----------------------------------------------------------------*/ 
 
-/* Si l'écran est moins de 700px de large, utiliser l'arrangement mobile */
-@media screen and (width < 700px) {
+/* Si l'écran est moins de 790px de large, utiliser l'arrangement mobile */
+@media screen and (width < 790px) {
 
 	/* Menu Burger */
 	label {
